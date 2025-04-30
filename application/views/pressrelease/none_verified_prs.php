@@ -94,7 +94,7 @@
 
                                     <tr id="<?php echo 'pr_' . $post->pr_id; ?>">
                                         <td style="width: 45%;">
-                                        <a href="<?php echo 'https://icrowdnewswire.com/' . $post->pr_name; ?>"
+                                        <a href="<?php echo 'https://examplenewswire.com/' . $post->pr_name; ?>"
                                                 target="_blank"> 
                                                 <?php echo $post->pr_title; ?>
                                             </a>

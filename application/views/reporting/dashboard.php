@@ -110,7 +110,7 @@
                     </td>
                     
                     <td style="width: 50%;">
-                      <a href="<?php echo 'http://icrowdnewswire.com/'.$post->post_name ?>" target="_blank"> 
+                      <a href="<?php echo 'http://examplenewswire.com/'.$post->post_name ?>" target="_blank"> 
                       <?php echo $post->post_title; ?></a> 
                     </td>
 

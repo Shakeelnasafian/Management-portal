@@ -21,7 +21,7 @@ class Campaign_model extends CI_Model
     {
         $this->db->limit($limit, $offset);
         $this->db->select("*");
-        $this->db->from("icrowd_campaign_tracking");
+        $this->db->from("ic_campaign_tracking");
         $this->db->order_by('campaign_id', 'desc');
         $query = $this->db->get();
 
@@ -80,7 +80,7 @@ class Campaign_model extends CI_Model
      */
     public function create_new_campaign($insert_data=1231)
     {
-        if ($this->db->insert('icrowd_campaign_tracking', $insert_data)) {
+        if ($this->db->insert('ic_campaign_tracking', $insert_data)) {
             $coupon_id = $this->db->insert_id();
 
             $response = [
@@ -113,7 +113,7 @@ class Campaign_model extends CI_Model
 
         $this->db->limit($limit, $offset);
         $this->db->select("*");
-        $this->db->from("icrowd_campaign_tracking");
+        $this->db->from("ic_campaign_tracking");
         $this->db->where("department","social-media");
         $this->db->order_by('campaign_id', 'desc');
         $query = $this->db->get();
@@ -140,7 +140,7 @@ class Campaign_model extends CI_Model
 
         $this->db->limit($limit, $offset);
         $this->db->select("*");
-        $this->db->from("icrowd_campaign_tracking");
+        $this->db->from("ic_campaign_tracking");
         $this->db->where("department","graphics-design");
         $this->db->order_by('campaign_id', 'desc');
         $query = $this->db->get();
@@ -168,7 +168,7 @@ class Campaign_model extends CI_Model
 
         $this->db->limit($limit, $offset);
         $this->db->select("*");
-        $this->db->from("icrowd_campaign_tracking");
+        $this->db->from("ic_campaign_tracking");
         $this->db->where("department","operations");
         $this->db->order_by('campaign_id', 'desc');
         $query = $this->db->get();
@@ -195,7 +195,7 @@ class Campaign_model extends CI_Model
 
         $this->db->limit($limit, $offset);
         $this->db->select("*");
-        $this->db->from("icrowd_campaign_tracking");
+        $this->db->from("ic_campaign_tracking");
         $this->db->where("campaign_status !=","completed");
         $this->db->order_by('campaign_id', 'desc');
         $query = $this->db->get();
@@ -222,7 +222,7 @@ class Campaign_model extends CI_Model
 
         $this->db->limit($limit, $offset);
         $this->db->select("*");
-        $this->db->from("icrowd_campaign_tracking");
+        $this->db->from("ic_campaign_tracking");
         $this->db->where("campaign_status","completed");
         $this->db->order_by('campaign_id', 'desc');
         $query = $this->db->get();
@@ -245,7 +245,7 @@ class Campaign_model extends CI_Model
     public function get_campaign_details($post_id=123)
     {
         $this->db->select("*");
-        $this->db->from("icrowd_campaign_tracking");
+        $this->db->from("ic_campaign_tracking");
         $this->db->where('post_id', $post_id);
         $query = $this->db->get();
 
@@ -271,7 +271,7 @@ class Campaign_model extends CI_Model
     {
         
         $this->db->where('campaign_id', $campaign_id);
-        $this->db->update('icrowd_campaign_tracking', $update_data);
+        $this->db->update('ic_campaign_tracking', $update_data);
 
         if ($this->db->affected_rows() > 0) {
             $response = [
@@ -303,7 +303,7 @@ class Campaign_model extends CI_Model
     {
         $this->db->select("*");
         $this->db->where("post_id", $post_id);
-        $query = $this->db->get("icrowd_campaign_tracking");
+        $query = $this->db->get("ic_campaign_tracking");
         if ($query->num_rows() > 0) {
             return 1;
         } else {
@@ -322,7 +322,7 @@ class Campaign_model extends CI_Model
     public function update_campaign_status_ajax($update_data,$campaign_id=1231)
     {
         $this->db->where('campaign_id', $campaign_id);
-        $this->db->update('icrowd_campaign_tracking', $update_data);
+        $this->db->update('ic_campaign_tracking', $update_data);
 
         if ($this->db->affected_rows() > 0) {
             $response = [

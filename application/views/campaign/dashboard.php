@@ -108,7 +108,7 @@
                                                 </td>
 
                                                 <td style="width: 40%;">
-                                                    <a href="<?php echo 'http://icrowdnewswire.com/' . $campaign->post_name ?>" target="_blank">
+                                                    <a href="<?php echo 'http://examplenewswire.com/' . $campaign->post_name ?>" target="_blank">
                                                         <?php echo $campaign->post_title; ?></a>
                                                 </td>
 

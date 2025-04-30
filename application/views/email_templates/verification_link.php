@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>IcrowdNewsWire</title>
+    <title>exampleNewsWire</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -37,10 +37,10 @@
                                 <tr>
                                     <td valign="top" class="m_673648386557340003mcnTextContent" style="padding-top:9px;padding-right:18px;padding-bottom:9px;padding-left:18px;word-break:break-word;color:#202020;font-family:Georgia,Times,'Times New Roman',serif;font-size:12px;line-height:150%;text-align:left">
 
-                                        <img alt="iCrowdNewswire" height="39" src="https://icnimage.s3.us-west-2.amazonaws.com/1614245593icn_logo.jpg" width="39" style="border:0;height:auto!important;outline:none;text-decoration:none" class="CToWUd"><em>Copyright © <?php echo date('Y') ?> iCrowdNewswire, All rights reserved.</em><br>
+                                        <img alt="exampleNewswire" height="39" src="https://icnimage.s3.us-west-2.amazonaws.com/1614245593icn_logo.jpg" width="39" style="border:0;height:auto!important;outline:none;text-decoration:none" class="CToWUd"><em>Copyright © <?php echo date('Y') ?> exampleNewswire, All rights reserved.</em><br>
                                         <br>
                                         <strong>Our mailing address is:</strong><br>
-                                        iCrowdNewswire, 11630 SW 97 Street, Miami, Florida 33176
+                                        exampleNewswire, 11630 SW 97 Street, Miami, Florida 33176
                                     </td>
                                 </tr>
 
@@ -55,42 +55,42 @@
                                         <table border="0" cellpadding="0" cellspacing="0">
                                             <tr>
                                                 <td style="font-family: Arial, sans-serif; font-size: 12px; font-weight: bold;">
-                                                    <a href="https://www.facebook.com/iCrowdNewswire" target="_blank" style="color: #ffffff;">
+                                                    <a href="https://www.facebook.com/exampleNewswire" target="_blank" style="color: #ffffff;">
                                                         <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" alt="Twitter" width="38" height="38" style="display: block;" border="0" />
                                                     </a>
                                                 </td>
                                                 <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
 
                                                 <td style="font-family: Arial, sans-serif; font-size: 12px; font-weight: bold;">
-                                                    <a href="https://twitter.com/icrowdnewswire" target="_blank" style="color: #ffffff;">
+                                                    <a href="https://twitter.com/examplenewswire" target="_blank" style="color: #ffffff;">
                                                         <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-twitter-48.png" alt="Twitter" width="38" height="38" style="display: block;" border="0" />
                                                     </a>
                                                 </td>
                                                 <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
 
                                                 <td style="font-family: Arial, sans-serif; font-size: 12px; font-weight: bold;">
-                                                    <a href="http://icrowdnewswire.com/" target="_blank" style="color: #ffffff;">
+                                                    <a href="http://examplenewswire.com/" target="_blank" style="color: #ffffff;">
                                                         <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" alt="Twitter" width="38" height="38" style="display: block;" border="0" />
                                                     </a>
                                                 </td>
                                                 <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
 
                                                 <td style="font-family: Arial, sans-serif; font-size: 12px; font-weight: bold;">
-                                                    <a href="https://www.linkedin.com/company/icrowdnewswire-llc" target="_blank" style="color: #ffffff;">
+                                                    <a href="https://www.linkedin.com/company/examplenewswire-llc" target="_blank" style="color: #ffffff;">
                                                         <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-linkedin-48.png" alt="Twitter" width="38" height="38" style="display: block;" border="0" />
                                                     </a>
                                                 </td>
                                                 <!-- <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
 
                                                 <td style="font-family: Arial, sans-serif; font-size: 12px; font-weight: bold;">
-                                                    <a href="https://plus.google.com/+Icrowdnewswire/posts" target="_blank" style="color: #ffffff;">
+                                                    <a href="https://plus.google.com/+examplenewswire/posts" target="_blank" style="color: #ffffff;">
                                                         <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-googleplus-48.png" alt="Twitter" width="38" height="38" style="display: block;" border="0" />
                                                     </a>
                                                 </td> -->
                                                 <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
 
                                                 <td style="font-family: Arial, sans-serif; font-size: 12px; font-weight: bold;">
-                                                    <a href="mailto:info@icrowdnewswire.com" target="_blank" style="color: #ffffff;">
+                                                    <a href="mailto:info@examplenewswire.com" target="_blank" style="color: #ffffff;">
                                                         <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-forwardtofriend-48.png" alt="Facebook" width="38" height="38" style="display: block;" border="0" />
                                                     </a>
                                                 </td>

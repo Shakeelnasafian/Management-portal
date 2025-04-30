@@ -172,7 +172,7 @@ class Utility extends CI_Controller
     public function search_bignews_links()
     {
         $id = $this->input->post('post_id');
-        $bigpond = "http://icrowdnewswire-reporting.mwrn.net/reporting?post_id=$id";
+        $bigpond = "http://example-reporting.mwrn.net/reporting?post_id=$id";
 
         $big_pond_data = @file_get_contents($bigpond);
         $raw_data = json_decode($big_pond_data, true);

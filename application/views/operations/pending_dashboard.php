@@ -86,7 +86,7 @@
                                             <tr id="<?php echo 'pr_' . $post->ID; ?>">
 
                                                 <td>
-                                                    <a href="<?php echo 'https://icrowdnewswire.com/?p=' . $post->ID . '&preview=true' ?>" target="_blank">
+                                                    <a href="<?php echo 'https://examplenewswire.com/?p=' . $post->ID . '&preview=true' ?>" target="_blank">
                                                         <?php echo $post->ID; ?></a>
                                                 </td>
 

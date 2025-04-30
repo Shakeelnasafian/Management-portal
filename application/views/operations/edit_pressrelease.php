@@ -117,7 +117,7 @@
 
                 <div class="card-footer">
                   <button type="submit" class="btn btn-outline-success" id="update_post_button">Publish</button>
-                  <a href="<?php echo 'https://icrowdnewswire.com/?p=' . $post->ID . '&preview=true'; ?>" target="_blank"><button type="button" class="btn btn-outline-info">Preview</button></a>
+                  <a href="<?php echo 'https://examplenewswire.com/?p=' . $post->ID . '&preview=true'; ?>" target="_blank"><button type="button" class="btn btn-outline-info">Preview</button></a>
                   <span id="message_span"></span>
                 </div>
               </form>

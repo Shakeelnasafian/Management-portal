@@ -23,7 +23,7 @@
 <body class="hold-transition login-page">
   <div class="login-box">
     <div class="login-logo">
-      <a href="<?php echo BASE_URL; ?>"><b>Icrowd</b>Management</a>
+      <a href="<?php echo BASE_URL; ?>"><b>example</b>Management</a>
     </div>
 
     <!-- message -->

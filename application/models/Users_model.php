@@ -17,7 +17,7 @@ class Users_model extends CI_Model
 
         $this->db->select("*");
         $this->db->where("(user_login = '$username' OR user_email = '$username')");
-        $query = $this->db->get('icrowd_users');
+        $query = $this->db->get('ic_users');
 
         if ($query->num_rows() > 0) {
 
@@ -39,7 +39,7 @@ class Users_model extends CI_Model
     {
         $this->db->select("*");
         $this->db->where("user_login", $user_login);
-        $query = $this->db->get("icrowd_users");
+        $query = $this->db->get("ic_users");
         if ($query->num_rows() > 0) {
             return 1;
         } else {
@@ -57,7 +57,7 @@ class Users_model extends CI_Model
     {
         $this->db->select("*");
         $this->db->where("user_email", $user_email);
-        $query = $this->db->get("icrowd_users");
+        $query = $this->db->get("ic_users");
         if ($query->num_rows() > 0) {
             return 1;
         } else {
@@ -73,7 +73,7 @@ class Users_model extends CI_Model
      */
     public function create_new_user_data($insert_data)
     {
-        if ($this->db->insert('icrowd_users', $insert_data)) {
+        if ($this->db->insert('ic_users', $insert_data)) {
 
             $response = [
                 'status' => true,
@@ -100,7 +100,7 @@ class Users_model extends CI_Model
     {
         $this->db->select("*");
         $this->db->where("ID", $ID);
-        $query = $this->db->get('icrowd_users');
+        $query = $this->db->get('ic_users');
 
         if ($query->num_rows() > 0) {
 
@@ -124,7 +124,7 @@ class Users_model extends CI_Model
     public function update_user_profile($update_data, $ID)
     {
         $this->db->where('ID', $ID);
-        $this->db->update('icrowd_users', $update_data);
+        $this->db->update('ic_users', $update_data);
 
         if ($this->db->affected_rows() > 0) {
             $response = [
@@ -154,7 +154,7 @@ class Users_model extends CI_Model
     {
         $this->db->select("ID,user_login,user_email");
         $this->db->where("user_email", $email);
-        $query = $this->db->get('icrowd_users');
+        $query = $this->db->get('ic_users');
 
         if ($query->num_rows() > 0) {
 
@@ -179,7 +179,7 @@ class Users_model extends CI_Model
     {
         $this->db->where('ID',$user_id);
         $this->db->set('verify_code', $verify_code);
-        $this->db->update('icrowd_users');
+        $this->db->update('ic_users');
         return;
 
     }//function ends
@@ -188,7 +188,7 @@ class Users_model extends CI_Model
     {
         $this->db->select("ID,user_login,user_email,verify_code");
         $this->db->where("ID", $ID);
-        $query = $this->db->get('icrowd_users');
+        $query = $this->db->get('ic_users');
 
         if ($query->num_rows() > 0) {
 
@@ -205,7 +205,7 @@ class Users_model extends CI_Model
     {
 
         $this->db->where('ID', $ID);
-        $this->db->update('icrowd_users', $update_data);
+        $this->db->update('ic_users', $update_data);
 
         if ($this->db->affected_rows() > 0) {
             $response = [

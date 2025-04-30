@@ -16,7 +16,7 @@ class Pressrelease_model extends CI_Model
     {
         $this->db->select("*");
         $this->db->where("post_status", 0);
-        $query = $this->db->get("icrowd_management");
+        $query = $this->db->get("ic_management");
         return $query->num_rows();
     } // fucntion end
 
@@ -29,7 +29,7 @@ class Pressrelease_model extends CI_Model
     {
         $this->db->select("*");
         $this->db->where("post_status", 1);
-        $query = $this->db->get("icrowd_management");
+        $query = $this->db->get("ic_management");
         return $query->num_rows();
     } // fucntion end
 
@@ -42,8 +42,8 @@ class Pressrelease_model extends CI_Model
      */
     public function get_all_verified_prs(int $limit = 20, int $offset = 0)
     {
-        $sql = "SELECT m.*, (SELECT GROUP_CONCAT(channel_name SEPARATOR ', ') FROM icrowd_management_channels AS c WHERE c.pr_id = m.pr_id) AS channel 
-        FROM icrowd_management AS m WHERE m.post_status = 1 GROUP BY m.pr_id 
+        $sql = "SELECT m.*, (SELECT GROUP_CONCAT(channel_name SEPARATOR ', ') FROM ic_management_channels AS c WHERE c.pr_id = m.pr_id) AS channel 
+        FROM ic_management AS m WHERE m.post_status = 1 GROUP BY m.pr_id 
         ORDER BY m.id DESC LIMIT ? OFFSET ?;";
         
         $query = $this->db->query($sql, array($limit, $offset) );
@@ -69,8 +69,8 @@ class Pressrelease_model extends CI_Model
      */
     public function get_all_none_verified_prs(int $limit = 20, int $offset = 0)
     {
-        $sql = "SELECT m.*, icn_posts.ID, (SELECT GROUP_CONCAT(channel_name SEPARATOR ', ') FROM icrowd_management_channels AS c WHERE c.pr_id = m.pr_id) AS channel 
-        FROM icrowd_management AS m LEFT JOIN icn_posts ON m.pr_id = icn_posts.ID
+        $sql = "SELECT m.*, icn_posts.ID, (SELECT GROUP_CONCAT(channel_name SEPARATOR ', ') FROM ic_management_channels AS c WHERE c.pr_id = m.pr_id) AS channel 
+        FROM ic_management AS m LEFT JOIN icn_posts ON m.pr_id = icn_posts.ID
         WHERE m.post_status = 0 GROUP BY m.pr_id ORDER BY m.id DESC LIMIT ? OFFSET ?;";
 
         $query = $this->db->query($sql, array($limit, $offset));
@@ -97,7 +97,7 @@ class Pressrelease_model extends CI_Model
     public function verify_pressrelease($update_data, $pr_id)
     {
         $this->db->where('pr_id', $pr_id);
-        $this->db->update('icrowd_management', $update_data);
+        $this->db->update('ic_management', $update_data);
 
         if ($this->db->affected_rows() > 0) {
             $response = [
@@ -129,7 +129,7 @@ class Pressrelease_model extends CI_Model
     {
         $this->db->select("*");
         $this->db->where("post_author", $post_author);
-        $query = $this->db->get("icrowd_management");
+        $query = $this->db->get("ic_management");
         return $query->num_rows();
     }
 
@@ -144,8 +144,8 @@ class Pressrelease_model extends CI_Model
     public function get_filter_none_verified_prs($post_author, $pr_title)
     {
 
-        $sql = "SELECT m.*, icn_posts.ID, (SELECT GROUP_CONCAT(channel_name SEPARATOR ', ') FROM icrowd_management_channels AS c WHERE c.pr_id = m.pr_id) AS channel 
-        FROM icrowd_management AS m LEFT JOIN icn_posts ON m.pr_id = icn_posts.ID
+        $sql = "SELECT m.*, icn_posts.ID, (SELECT GROUP_CONCAT(channel_name SEPARATOR ', ') FROM ic_management_channels AS c WHERE c.pr_id = m.pr_id) AS channel 
+        FROM ic_management AS m LEFT JOIN icn_posts ON m.pr_id = icn_posts.ID
         WHERE m.post_status = 0 AND m.post_author = ? AND m.pr_title LIKE ? GROUP BY m.pr_id ORDER BY m.id DESC LIMIT 50;";
 
         $query = $this->db->query($sql, array($post_author, $pr_title));

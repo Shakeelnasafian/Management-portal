@@ -14,8 +14,8 @@ class Amazon{
             'region'  => 'us-west-2',
             'scheme'    => 'http',
             'credentials' => [
-                'key'    => "AKIAJ3PIT5AXJPCL667A",
-                'secret' => "/eDUAYa0vDOe+xBWzvM8sPxjewh58+V6m3YR/mFr",
+                'key'    => "Example",
+                'secret' => "/Example",
             ]
         ]);
 

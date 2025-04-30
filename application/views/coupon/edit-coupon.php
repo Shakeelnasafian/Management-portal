@@ -120,7 +120,7 @@
                 <div class="col-sm-6">
                   <div class="form-group">
                     <label>Emails Allow</label>
-                    <textarea class="form-control" rows="3" placeholder="Write multiple emails with separated commas. e.g (nasir@icrowdnewswire.com, skhan@icrowdnewswire.com)" name="coupon_emails"><?php echo $coupon->coupon_emails ?></textarea>
+                    <textarea class="form-control" rows="3" placeholder="Write multiple emails with separated commas. e.g (nasir@examplenewswire.com, skhan@examplenewswire.com)" name="coupon_emails"><?php echo $coupon->coupon_emails ?></textarea>
                   </div>
                 </div>
                 <div class="col-sm-6">

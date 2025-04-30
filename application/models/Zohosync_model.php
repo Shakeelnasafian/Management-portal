@@ -7,7 +7,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Zohosync_model extends CI_Model
 {
 
-    public function load_icrowd_users($today)
+    public function load_ic_users($today)
     {
         $this->db->select("icn_users.user_login,icn_users.user_email,icn_users.user_registered,icn_users.display_name");
         $this->db->from("icn_users");

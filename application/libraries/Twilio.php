@@ -8,9 +8,9 @@ class Twilio{
 
     public function send_message($phone_number,$text) {
         // Your Account SID and Auth Token from twilio.com/console
-        $sid = 'ACd96da4c170d1e8a5701701da44f55899';
-        $token = 'd2fc5c077883388728279a2d2f3e53c6';
-        $twilio_from_number = "+16173000809";
+        $sid = 'Example';
+        $token = 'Example';
+        $twilio_from_number = "+1231312312";
         $client = new Client($sid, $token);
         try{
             $result = $client->messages->create(

@@ -74,7 +74,7 @@
                         <td><?php echo $post->post_title ?></td>
                         <td>
                         <a href="<?php echo BASE_URL.'search-engine/edit-pressrelease/'.$post->ID; ?>"><button type="button" class="btn btn-primary">Edit Post</button></a>
-                        <a href="<?php echo 'https://icrowdnewswire.com/' . $post->post_name; ?>" target="_blank"><button type="button" class="btn btn-info">View Post</button></a>
+                        <a href="<?php echo 'https://examplenewswire.com/' . $post->post_name; ?>" target="_blank"><button type="button" class="btn btn-info">View Post</button></a>
                         <a href="<?php echo BASE_URL . 'search-engine/delete-archive-pr/'.$post->ID ?>"  onclick="return confirm('Are you sure to delete the Press Release? You will not be able to recover it.');"><button type="button" class="btn btn-danger">Delete Post</button></a>
                         
                       </td>

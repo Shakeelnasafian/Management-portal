@@ -24,7 +24,7 @@ class Management_model extends CI_Model
                     Sum( CASE WHEN financial_links = 1 THEN 1 ELSE 0 END ) AS total_financial_links,
                     Sum( CASE WHEN post_status = 1 THEN 1 ELSE 0 END ) AS today_verified_posts,
                     Sum( CASE WHEN post_status = 0 THEN 1 ELSE 0 END ) AS today_unveified_posts
-                        FROM icrowd_management;");
+                        FROM ic_management;");
 
         $response =  $query->row();
 
@@ -33,7 +33,7 @@ class Management_model extends CI_Model
                         Sum( CASE WHEN channel_name = 'bignews_links' THEN 1 ELSE 0 END ) AS total_bignews_links,
                         Sum( CASE WHEN channel_name = 'financial_links' THEN 1 ELSE 0 END ) AS total_financial_links,
                         Sum( CASE WHEN channel_name = 'ips_links' THEN 1 ELSE 0 END ) AS total_ips_links
-                                FROM icrowd_management_channels;");
+                                FROM ic_management_channels;");
         $channels =  $query2->row();
 
 
@@ -65,7 +65,7 @@ class Management_model extends CI_Model
         $this->db->where('pr_publish_time >=', $day_start);
         $this->db->where('pr_publish_time <=', $day_end);
 
-        $query = $this->db->get("icrowd_management");
+        $query = $this->db->get("ic_management");
 
         if ($query->num_rows() > 0) {
 
@@ -90,7 +90,7 @@ class Management_model extends CI_Model
         $this->db->where('pr_publish_time <=', $day_end);
         $this->db->where('post_status', 0);
 
-        $query = $this->db->get("icrowd_management");
+        $query = $this->db->get("ic_management");
 
         if ($query->num_rows() > 0) {
 
@@ -115,7 +115,7 @@ class Management_model extends CI_Model
         $this->db->where('pr_publish_time <=', $day_end);
         $this->db->where('post_status', 1);
 
-        $query = $this->db->get("icrowd_management");
+        $query = $this->db->get("ic_management");
 
         if ($query->num_rows() > 0) {
 
@@ -140,7 +140,7 @@ class Management_model extends CI_Model
         $this->db->where('pr_publish_time <=', $day_end);
         $this->db->where('frankly_links', 1);
 
-        $query = $this->db->get("icrowd_management");
+        $query = $this->db->get("ic_management");
 
         if ($query->num_rows() > 0) {
 
@@ -165,7 +165,7 @@ class Management_model extends CI_Model
         $this->db->where('pr_publish_time <=', $day_end);
         $this->db->where('bignews_links', 1);
 
-        $query = $this->db->get("icrowd_management");
+        $query = $this->db->get("ic_management");
 
         if ($query->num_rows() > 0) {
 
@@ -184,7 +184,7 @@ class Management_model extends CI_Model
      */
     public function mostly_used_coupons()
     {
-        $result = $this->db->query("SELECT transaction_id, COUNT(transaction_id) AS mostUsed FROM icrowd_management WHERE payment_type = 'Coupon' GROUP BY transaction_id ORDER BY mostUsed  DESC LIMIT 5;");
+        $result = $this->db->query("SELECT transaction_id, COUNT(transaction_id) AS mostUsed FROM ic_management WHERE payment_type = 'Coupon' GROUP BY transaction_id ORDER BY mostUsed  DESC LIMIT 5;");
 
         if ($result->num_rows() > 0) {
             $data =  $result->result();
@@ -209,7 +209,7 @@ class Management_model extends CI_Model
         $this->db->where('pr_publish_time <=', $day_end);
         $this->db->where('financial_links', 1);
 
-        $query = $this->db->get("icrowd_management");
+        $query = $this->db->get("ic_management");
 
         if ($query->num_rows() > 0) {
 

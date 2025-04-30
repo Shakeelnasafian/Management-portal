@@ -124,12 +124,12 @@ if (!function_exists("show_products_name_view")) {
         $kiosk_name = '';
 
         $array = array(
-            '19' => 'Release Live',
-            '56' => 'Wire.RealEstate',
-            '47' => 'Legal Newswire',
-            '55' => 'iCrowdmarketing.com',
-            '58' => 'Class Action Marketing',
-            '60' => 'Latin America'
+            '19' => 'Example Live',
+            '56' => 'Example.RealEstate',
+            '47' => 'Example Newswire',
+            '55' => 'Example.com',
+            '58' => 'Example Marketing',
+            '60' => 'Example America'
         );
 
         foreach ($array as $key => $value) {
@@ -157,12 +157,12 @@ if (!function_exists("show_products_name_edit")) {
         $selection = '';
 
         $array = array(
-            '19' => 'Release Live',
-            '56' => 'Wire.RealEstate',
-            '47' => 'Legal Newswire',
-            '55' => 'iCrowdmarketing.com',
-            '58' => 'Class Action Marketing',
-            '60' => 'Latin America'
+            '19' => 'Example Live',
+            '56' => 'Example.RealEstate',
+            '47' => 'Example Newswire',
+            '55' => 'Example.com',
+            '58' => 'Example Marketing',
+            '60' => 'Example America'
         );
         foreach ($array as $index => $value) {
             if ($index == $id) {
@@ -297,8 +297,8 @@ if (!function_exists('upload_image')) {
             'version' => 'latest',
             'scheme'    => 'http',
             'credentials' => [
-                'key'    => "AKIAJ3PIT5AXJPCL667A",
-                'secret' => "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",
+                'key'    => "asdasdasd",
+                'secret' => "/asdasdasdasdasdasd",
             ]
         ]);
 
@@ -307,7 +307,7 @@ if (!function_exists('upload_image')) {
             'Bucket' => 'icnimage',
             'Key'    => $key,
             'SourceFile' => $source,
-            'Body'   => 'icn-testing-123',
+            'Body'   => 'ex-testing-123',
             'ACL'    => 'public-read',
 
         ]);
@@ -496,22 +496,22 @@ if (!function_exists("check_report_kiosk_id")) {
     {
         switch ($kiosk_id) {
             case 19:
-                echo 'https://icrowdnewswire.com/report/?id=' . $post_id;
+                echo 'https://Example.com/report/?id=' . $post_id;
                 break;
             case 47:
-                echo 'https://www.law.com/legalnewswire/reporting.php?id=' . $post_id;
+                echo 'https://www.Example.com/legalnewswire/reporting.php?id=' . $post_id;
                 break;
             case 55:
-                echo 'https://submission.icrowdmarketing.com/reporting.php?id=' . $post_id;
+                echo 'https://Example.com/reporting.php?id=' . $post_id;
                 break;
             case 56:
-                echo 'https://submit.wire.realestate/reporting.php?id=' . $post_id;
+                echo 'https://Example.realestate/reporting.php?id=' . $post_id;
                 break;
             case 58:
-                echo 'http://classactionmarketing.us/reporting.php?id=' . $post_id;
+                echo 'http://Example.us/reporting.php?id=' . $post_id;
                 break;
             default:
-                echo 'https://icrowdnewswire.com/report/?id=' . $post_id;
+                echo 'https://Example.com/report/?id=' . $post_id;
         }
     }
 }
@@ -546,22 +546,22 @@ if (!function_exists("get_product_name")) {
         $product = '';
         switch ($product_id) {
             case 19:
-                $product = "ReleaseLive";
+                $product = "Example";
                 break;
             case 47:
-                $product = "Legal NewsWire";
+                $product = "Example NewsWire";
                 break;
             case 55:
-                $product = "iCrowd Marketing";
+                $product = "Example Marketing";
                 break;
             case 56:
-                $product = "Wire.RealEstate";
+                $product = "Example.RealEstate";
                 break;
             case 58:
-                $product = "Class Action Marketing";
+                $product = "Example Marketing";
                 break;
             default:
-                $product = "ReleaseLive";
+                $product = "Example";
         }
         return $product;
     }
@@ -686,19 +686,19 @@ if (!function_exists("coupon_product_name")) {
         $product = '';
         switch ($product_id) {
             case 19:
-                $product = "ReleaseLive";
+                $product = "Example";
                 break;
             case 47:
-                $product = "Legalnewswire.com";
+                $product = "Example.com";
                 break;
             case 55:
-                $product = "iCrowdmarketing";
+                $product = "Example";
                 break;
             case 56:
-                $product = "Wire.RealEstate";
+                $product = "Example.RealEstate";
                 break;
             case 58:
-                $product = "Class Action Marketing";
+                $product = "Example Marketing";
                 break;
             case 'All':
                 $product = "ALL";
@@ -725,8 +725,8 @@ if (!function_exists("encryptor")) {
         $output = false;
         $encrypt_method = "AES-256-CBC";
         //pls set your unique hashing key
-        $secret_key = 'pixakoKey';
-        $secret_iv = 'pixakoKeyGenerator';
+        $secret_key = 'Example';
+        $secret_iv = 'Example';
         // hash
         $key = hash('sha256', $secret_key);
         // iv - encrypt method AES-256-CBC expects 16 bytes - else you will get a warning
@@ -752,8 +752,8 @@ if (!function_exists("decryptor")) {
         $output = false;
         $encrypt_method = "AES-256-CBC";
         //pls set your unique hashing key
-        $secret_key = 'pixakoKey';
-        $secret_iv = 'pixakoKeyGenerator';
+        $secret_key = 'Example';
+        $secret_iv = 'Example';
         // hash
         $key = hash('sha256', $secret_key);
         // iv - encrypt method AES-256-CBC expects 16 bytes - else you will get a warning
@@ -780,8 +780,8 @@ if (!function_exists('aws_upload_image')) {
                 'version' => 'latest',
                 'scheme'    => 'https',
                 'credentials' => [
-                    'key'    => "AKIAJ3PIT5AXJPCL667A",
-                    'secret' => "/eDUAYa0vDOe+xBWzvM8sPxjewh58+V6m3YR/mFr",
+                    'key'    => "Example",
+                    'secret' => "/Exampler",
                 ]
             ]);
 
@@ -824,13 +824,13 @@ if (!function_exists('send_email')) {
             'protocol' => 'smtp',
             'smtp_host' => 'tls://email-smtp.us-west-2.amazonaws.com',
             'smtp_port' => 465,
-            'smtp_user' => 'AKIAZQQXJ6AS6MBQPS6R',
-            'smtp_pass' => 'BJM4mkODbFXHjDR2u4oV96/YgOFnhfV2b6hnIqJ5zDxh'
+            'smtp_user' => 'Example',
+            'smtp_pass' => 'Example'
         );
         $config['crlf'] = "\r\n";
         $CI->load->library('email', $config);
         $CI->email->set_newline("\r\n");
-        $CI->email->from("noreply@icrowdnewswire.com", 'iCrowdnewswire.com');
+        $CI->email->from("noreply@Example.com", 'Example.com');
         $CI->email->to($recipient);
         $CI->email->subject($subject);
         $message = $CI->load->view($template, $data, TRUE);

@@ -90,7 +90,7 @@
                                             <option value='19' selected>Release Live</option>
                                             <option value='56'>Wire.RealEstate</option>
                                             <option value='47'>Legal Newswire</option>
-                                            <option value='55'>iCrowdmarketing.com</option>
+                                            <option value='55'>examplemarketing.com</option>
                                             <option value='58'>Class Action Marketing</option>
                                             <option value='60'>Latin America</option>
 
@@ -137,7 +137,7 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label>Emails Allow</label>
-                                        <textarea class="form-control" rows="3" placeholder="Write multiple emails with separated commas. e.g (nasir@icrowdnewswire.com, skhan@icrowdnewswire.com)" name="coupon_emails"></textarea>
+                                        <textarea class="form-control" rows="3" placeholder="Write multiple emails with separated commas. e.g (nasir@examplenewswire.com, skhan@examplenewswire.com)" name="coupon_emails"></textarea>
                                     </div>
                                 </div>
 

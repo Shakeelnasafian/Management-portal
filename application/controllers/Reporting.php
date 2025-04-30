@@ -180,8 +180,8 @@ class Reporting extends CI_Controller
 							'version' => 'latest',
 							'scheme'    => 'https',
 							'credentials' => [
-								'key'    => "AKIAJ3PIT5AXJPCL667A",
-								'secret' => "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",
+								'key'    => "werwerew",
+								'secret' => "/ewrweerwe+V6m3YR/ewr",
 							]
 						]);
 
@@ -408,8 +408,8 @@ class Reporting extends CI_Controller
 					'version' => 'latest',
 					'scheme'    => 'https',
 					'credentials' => [
-						'key'    => "AKIAJ3PIT5AXJPCL667A",
-						'secret' => "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",
+						'key'    => "sdfdsfsdfsdfsdf",
+						'secret' => "/sdfsdf+dfsdf+sdfsdf/mFr",
 					]
 				]);
 

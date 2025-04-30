@@ -243,11 +243,11 @@
                 <?php
                 if ($this->session->userdata('user_session')->icn_role == 'Stake Holders' || $this->session->userdata('user_session')->icn_role == 'Administrator' || $this->session->userdata('user_session')->icn_role == 'Editor') { ?>
 
-                    <li class="nav-item has-treeview " id="icrowd_users">
+                    <li class="nav-item has-treeview " id="example_users">
                         <a class="nav-link">
                             <i class="nav-icon fas fa-user"></i>
                             <p>
-                                iCrowd Users
+                                example Users
                                 <i class="fas fa-angle-left right"></i>
                             </p>
                         </a>

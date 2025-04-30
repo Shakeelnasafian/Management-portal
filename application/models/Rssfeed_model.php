@@ -17,7 +17,7 @@ class Rssfeed_model extends CI_Model
     public function get_rss_feed_links()
     {
         $this->db->select("*");
-        $query = $this->db->get("icrowd_manage_rss_link");
+        $query = $this->db->get("ic_manage_rss_link");
 
         if ($query->num_rows() > 0) {
 
@@ -38,9 +38,9 @@ class Rssfeed_model extends CI_Model
      */
     public function insert_rss_feed_link($insert_data,$feed_data)
     {
-        if ($this->db->insert('icrowd_management', $insert_data)) {
+        if ($this->db->insert('ic_management', $insert_data)) {
 
-            $this->db->insert('icrowd_management_channels', $feed_data);
+            $this->db->insert('ic_management_channels', $feed_data);
             
             $response = [
                 'status' => true,
@@ -70,18 +70,18 @@ class Rssfeed_model extends CI_Model
     {
         $this->db->select("*");
         $this->db->where("pr_id", $data['pr_id']);
-        $query = $this->db->get("icrowd_management");
+        $query = $this->db->get("ic_management");
 
         if ($query->num_rows() > 0) {
             
             $this->db->select("*");
             $this->db->where("pr_id", $data['pr_id']);
             $this->db->where("channel_name", $data['channel_name']);
-            $query = $this->db->get("icrowd_management_channels");
+            $query = $this->db->get("ic_management_channels");
 
             if ($query->num_rows() == 0) {
 
-                $this->db->insert('icrowd_management_channels', $data);
+                $this->db->insert('ic_management_channels', $data);
                 
                 return true;
 
