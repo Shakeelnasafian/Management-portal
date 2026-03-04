@@ -1,0 +1,188 @@
+.radio-button-inline {
+	display: inline-block;
+	padding-top: 6%;
+	padding-right: 6%;
+}
+.radio-button-inline-no-top{
+	display: inline-block;
+	padding-right: 6%;
+}
+span.danger-color {
+	color: #dc3545;
+}
+span.success-color {
+	color: #28a745;
+}
+span.success-color i {
+	padding-left: 5px;
+}
+span.danger-color i {
+	padding-left: 5px;
+}
+.coupon_buttons {
+	float: right;
+}
+button.btn.btn-outline-danger.coupon_buttons {
+    margin-left: 5px;
+}
+.error {
+    color: #b94a48;
+}
+th.action_tab {
+      width: 20%;
+}
+a#coupon_button {
+    margin-left: 10px;
+}
+
+.card-footer.clearfix a {
+    width: 33px !important;
+    margin: 7px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #C4C4C4;
+	color: #F97FC1;
+	background: #fff;
+}
+.main-container-header {
+    margin-bottom: 2%;
+}
+
+.first-row {
+    background: cornflowerblue !important;
+}
+.second-row {
+    background: #caa !important;
+}
+.third-row {
+    background: #59b68c !important;
+}
+.fourth-row {
+    background: rgb(113 68 7 / 60%) !important;
+}
+
+.main-content-area {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.checkbox-inline {
+    display: inline-block;
+    padding-right: 7px;
+}
+.sixth-row {
+    background: #c48b8b !important;
+}
+.create-report {
+    width: 60%;
+    font-size: 17px;
+}
+.sub-child {
+    background: #494E53 !important;
+}
+button#add-button {
+    margin-top: 5%;
+    width: 100%;
+}
+b.heading {
+    width: 40%;
+    display: inline-block;
+}
+.social-media-stats {
+    background: #d46a6a !important;
+    color: #fff;
+}
+.post_title {
+    width: 98.5%;
+    padding: 7px 0 10px 10px;
+    background: #fff;
+    margin: 7px auto;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #000;
+}
+
+#upload_pdf_form {
+    width: 50%;
+    margin: 0 0 0 1%;
+}
+
+span#PDF_note {
+    color: green;
+}
+
+.small-box>.inner {
+    color: #fff;
+}
+
+/* campaign-dashboard */
+
+.campaign-buttons {
+    text-align: right;
+}
+
+ul#add_categories_ul {
+    height: 250px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+}
+ul#add_categories_ul li {
+    list-style-type: none;
+   
+}
+
+ul#remove_categories_ul {
+    height: 250px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+}
+ul#remove_categories_ul li {
+    list-style-type: none;
+   
+}
+
+label.checkbox-cate {
+    font-weight: 500 !important;
+    margin: 2px 12px 2px 0;
+    display: inline-block;
+}
+input.cate-check {
+    display: inline-block;
+    margin: 1px 10px 1px 0px;
+}
+span#message_span {
+    color: green;
+}
+#client_information {
+    margin-bottom: 20px;
+}
+
+i.toggle_password {
+    float: right;
+    margin-top: -26px;
+    margin-right: 7px;
+}
+
+.image_profile{
+    width: 20%;
+}
+
+td.coupon_code {
+    cursor: pointer;
+}
+
+ul.nav.flex-column.coupon> .nav-item {
+    width: 100%;
+}
+a.nav-link {
+    cursor: pointer;
+}
+
+.trans-not-found{
+    margin: 18px auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
