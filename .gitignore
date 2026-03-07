@@ -34,3 +34,5 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 /assets/source/*
 /assets/thumbs/*
 /application/config/database.php
+/.env
+/writable/
